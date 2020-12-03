@@ -52,15 +52,12 @@ class Population:
             point = Point(boid.rect.x, boid.rect.y, boid)
             self.qt.insert(point)
 
-    def update(self, frames: int = 60, a: float = 1, b: float = 1, c: float = 1) -> tuple:
+    def update(self, a: float = 1, b: float = 1, c: float = 1) -> tuple:
         """
         Updates all population
 
         Parameters
         ----------
-            frames : (float, optional)
-                real number of frames per second
-                Defaults to 60
             a : (float, optional)
                 coefficient for alignment
                 Defaults to 1
@@ -78,8 +75,6 @@ class Population:
         brute, modified = 0, 0
 
         for boid in self.pop.sprites()[:]:
-            boid.SPEED = _map(frames, 30, 60, 8, 4)
-
             points = self.qt.query(Circle(self._renderer, boid.rect.x, boid.rect.y, boid.RADIUS))
             others = [p.data for p in points]
 

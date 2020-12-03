@@ -143,9 +143,9 @@ class Rect(Boundary):
             y : int
                 center y coordinate of the Rect
             width : int
-                width of the Rect
+                width of the Rect from the center
             height : int
-                height of the Rect
+                height of the Rect from the center
         """
         super().__init__(renderer, x, y, width, height)
 

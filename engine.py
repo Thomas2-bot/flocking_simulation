@@ -648,7 +648,7 @@ class Slider(pygame.sprite.Sprite):
                 mouse position
         """
         x, y = pos
-        return (self._x <= x <= self._x + self.length and self._y - self.radius <= y <= self._y + self.radius)
+        return self._x <= x <= self._x + self.length and self._y - self.radius <= y <= self._y + self.radius
 
     def draw(self) -> None:
         """
@@ -745,7 +745,7 @@ class Engine:
     Finally, ERROR and WARNING do not cause a 'real' ``python error`` but throw some
     pieces of information in the console. May turn into spam.
     """
-    FONT = pygame.font.SysFont("comicsans", 12)
+    FONT = pygame.font.SysFont("comicsans", 11)
 
     def __init__(self, width: int, height: int, title: str = None) -> None:
         """

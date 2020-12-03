@@ -37,7 +37,7 @@ def draw() -> None:
     a = renderer.get_slider_value("alignment")
     b = renderer.get_slider_value("cohesion")
     c = renderer.get_slider_value("separation")
-    mates, vel, brute, modified = pop.update(fps, a, b, c)
+    mates, vel, brute, modified = pop.update(a, b, c)
 
     renderer.background((60, 70, 80))
     pop.qt.show()
@@ -45,13 +45,14 @@ def draw() -> None:
 
     if GETINFO:
         renderer.text(10, 10, f"fps : {round(fps)}")
-        renderer.text(10, 20, f"total boids: {N}")
-        renderer.text(10, 30, f"average local flockmates: {round(mates / N, 1)}")
-        renderer.text(10, 40, f"perception radius: {radius}")
-        renderer.text(10, 50, f"average velocity: {round(vel/N, 2)}")
-        renderer.text(10, 60, f"max velocity: {speed}")
-        renderer.text(10, 70, f"average brute force: {round(brute / N, 3)}")
-        renderer.text(10, 80, f"average modified force: {round(modified / N, 3)}")
+        renderer.text(10, 20, f"total boids : {N}")
+        renderer.text(10, 30, f"average local flockmates : {round(mates / N, 1)}")
+        renderer.text(10, 40, f"perception radius : {radius}")
+        renderer.text(10, 50, f"max velocity : {speed}")
+        renderer.text(10, 60, f"average velocity : {round(vel/N, 2)}")
+        renderer.text(10, 70, f"max brute force : {round(3 * max_force, 3)}")
+        renderer.text(10, 80, f"average brute force : {round(brute / N, 3)}")
+        renderer.text(10, 90, f"modified/brute ratio : {round(modified / brute, 3)}")
 
 
 if __name__ == "__main__":
