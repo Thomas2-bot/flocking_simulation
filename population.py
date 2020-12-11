@@ -75,7 +75,12 @@ class Population:
         brute, modified = 0, 0
 
         for boid in self.pop.sprites()[:]:
-            points = self.qt.query(Circle(self._renderer, boid.rect.x, boid.rect.y, boid.RADIUS))
+            points =\
+                self.qt.query(Circle(self._renderer, boid.rect.x, boid.rect.y, boid.RADIUS)) +\
+                self.qt.query(Circle(self._renderer, boid.rect.x + self._win[0], boid.rect.y, boid.RADIUS)) +\
+                self.qt.query(Circle(self._renderer, boid.rect.x - self._win[0], boid.rect.y, boid.RADIUS)) +\
+                self.qt.query(Circle(self._renderer, boid.rect.x, boid.rect.y + self._win[1], boid.RADIUS)) +\
+                self.qt.query(Circle(self._renderer, boid.rect.x, boid.rect.y - self._win[1], boid.RADIUS))
             others = [p.data for p in points]
 
             tot, br, mo = boid.flock(others, a, b, c)

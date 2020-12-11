@@ -27,7 +27,7 @@ The [Vector](vector.py) and [Engine](engine.py) classes are an *elegant* way to 
 1.  v0.1 : first boid drawn on the screen (yay !)
 2.  v0.2 : force computation
 3.  v0.3 : perception radius
-4.  v0.4 : boids dont' see what's behind them
+4.  v0.4 : boids don't see what's behind them
 5.  v0.5 : [Vector](vector.py) class
 6. ~~v1.0 : [Slider](slider.py) class~~
 7.  v1.1 : changed the Vector class and perception formula
@@ -36,3 +36,4 @@ The [Vector](vector.py) and [Engine](engine.py) classes are an *elegant* way to 
 10. v2.1 : minor changes and drawing-bug fix
 11. v3.0 : integration of the [Engine](engine.py) file
 12. v3.1 : refractor
+13. v3.2 : made Boids look for flockmates trough window edges
