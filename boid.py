@@ -2,8 +2,7 @@ from math import degrees
 
 import pygame
 
-from engine import Engine
-from vector import Vector
+from phoenyx import Engine, Vector
 
 
 class Boid(pygame.sprite.Sprite):

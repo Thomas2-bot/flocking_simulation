@@ -1,5 +1,4 @@
-from engine import Engine
-from vector import Vector
+from phoenyx import Engine, Vector
 
 
 class Point:

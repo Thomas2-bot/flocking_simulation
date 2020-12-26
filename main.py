@@ -1,4 +1,4 @@
-from engine import Engine
+from phoenyx import Engine
 from population import Population
 
 WIDTH, HEIGHT = 1100, 650

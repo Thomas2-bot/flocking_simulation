@@ -1,9 +1,9 @@
 from random import randint
 
 import pygame
+from phoenyx import Engine
 
 from boid import Boid
-from engine import Engine
 from quadtree import Circle, Point, Quadtree, Rect
 
 
