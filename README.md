@@ -21,18 +21,19 @@ Please visit this [link](http://www.red3d.com/cwr/boids/) for more. All credits 
 ## Implementation
 The main class is the [Boid](boid.py) class. It basically handles *all* the computation needed for the Craig Reynolds' model. The 3 forces mentionned above are calculated, we limit the force and make all boids move at a certain velocity. Then we apply some coefficients and we add up in acceleration. The coefficients can be modified when the [main](main.py) program is running.
 
-The [Vector](vector.py) and [Engine](engine.py) classes are an *elegant* way to make formulas easier and to modify on the go some coefficients. Since v1.2, the [quadtree](quadtree.py) space structure is used to bring back the $O(n\ln{n})$ complexity.
+The Vector and Engine classes are an *elegant* way to make formulas easier and to modify on the go some coefficients. They can now be accessed under [Phoenyx - Pygame Engine](https://pypi.org/project/phoenyx) since v.2.  Since v1.2, the [quadtree](quadtree.py) space structure is used to bring back the $O(n\ln{n})$ complexity.
 
 ## Change log
 1.  v0.1 : first boid drawn on the screen (yay !)
 2.  v0.2 : force computation
 3.  v0.3 : perception radius
 4.  v0.4 : boids dont' see what's behind them
-5.  v0.5 : [Vector](vector.py) class
+5.  v0.5 : ~~[Vector](vector.py) class~~
 6. ~~v1.0 : [Slider](slider.py) class~~
 7.  v1.1 : changed the Vector class and perception formula
 8.  v1.2 : [Quadtree](quadtree.py) acceleration
-9.  v2.0 : brand new [Vector](vector.py) class
+9.  v2.0 : ~~brand new [Vector](vector.py) class~~
 10. v2.1 : minor changes and drawing-bug fix
-11. v3.0 : integration of the [Engine](engine.py) file
+11. v3.0 : ~~integration of the [Engine](engine.py) file~~
 12. v3.1 : refractor
+13. v3.2 : Vector and Engine from [Phoenyx - Pygame Engine](https://pypi.org/project/phoenyx)
