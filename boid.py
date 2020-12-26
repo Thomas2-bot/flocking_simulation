@@ -135,7 +135,7 @@ class Boid(pygame.sprite.Sprite):
         for other in others:
             d = self.pos.distance(other.pos)
 
-            if other != self and self.is_visible(other):
+            if other is not self and self.is_visible(other):
                 steering_alignment += other.vel
                 steering_cohesion += other.pos
 

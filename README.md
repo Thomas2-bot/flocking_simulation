@@ -27,8 +27,13 @@ The Vector and Engine classes are an *elegant* way to make formulas easier and t
 1.  v0.1 : first boid drawn on the screen (yay !)
 2.  v0.2 : force computation
 3.  v0.3 : perception radius
+<<<<<<< HEAD
 4.  v0.4 : boids dont' see what's behind them
 5.  v0.5 : ~~[Vector](vector.py) class~~
+=======
+4.  v0.4 : boids don't see what's behind them
+5.  v0.5 : [Vector](vector.py) class
+>>>>>>> 71629ab8d158007a08f53d515b988f904603e926
 6. ~~v1.0 : [Slider](slider.py) class~~
 7.  v1.1 : changed the Vector class and perception formula
 8.  v1.2 : [Quadtree](quadtree.py) acceleration
@@ -36,4 +41,8 @@ The Vector and Engine classes are an *elegant* way to make formulas easier and t
 10. v2.1 : minor changes and drawing-bug fix
 11. v3.0 : ~~integration of the [Engine](engine.py) file~~
 12. v3.1 : refractor
+<<<<<<< HEAD
 13. v3.2 : Vector and Engine from [Phoenyx - Pygame Engine](https://pypi.org/project/phoenyx)
+=======
+13. v3.2 : made Boids look for flockmates trough window edges
+>>>>>>> 71629ab8d158007a08f53d515b988f904603e926

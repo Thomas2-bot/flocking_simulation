@@ -127,7 +127,7 @@ class Rect(Boundary):
     ====
     inherits Boundary
     """
-    COLOR = (65, 75, 85)
+    COLOR = (55)
 
     def __init__(self, renderer: Engine, x: int, y: int, width: int, height: int) -> None:
         """

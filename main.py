@@ -39,7 +39,7 @@ def draw() -> None:
     c = renderer.get_slider_value("separation")
     mates, vel, brute, modified = pop.update(a, b, c)
 
-    renderer.background((60, 70, 80))
+    renderer.background(51)
     pop.qt.show()
     pop.show()
 
